@@ -1,0 +1,121 @@
+.movie-showcase {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px 60px;
+}
+
+main {
+  padding-top: 20px;
+}
+
+main > section {
+  margin-bottom: 50px;
+  padding: 40px;
+  border-radius: 16px;
+  background-color: var(--color-background-light);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  border: 1px solid var(--color-border);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeIn 0.6s ease-out backwards;
+}
+
+main > section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+}
+
+main > section:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+main > section:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+main > section:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+main h2 {
+  font-family: var(--font-header);
+  font-size: 2.5em;
+  color: var(--color-primary);
+  padding-bottom: 15px;
+  margin-bottom: 35px;
+  font-weight: 700;
+  position: relative;
+}
+
+main h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--color-accent) 0%, var(--color-accent-light) 100%);
+  border-radius: 2px;
+}
+
+#introduction p {
+  font-size: 1.15em;
+  line-height: 1.8;
+  color: var(--color-text-dark);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* --- Styles for Preferences Section --- */
+
+#preferences h3 {
+  color: var(--color-primary);
+  font-size: 1.4em;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+#preferences ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+#preferences li {
+  background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-accent-light) 100%);
+  padding: 10px 20px;
+  border-radius: 30px;
+  color: #ffffff;
+  font-size: 0.95em;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(233, 69, 96, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#preferences li:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(233, 69, 96, 0.3);
+}
+
+#preferences p {
+  font-size: 1.1em;
+  margin-bottom: 12px;
+  line-height: 1.7;
+}
+
+#preferences p strong {
+  color: var(--color-accent);
+  font-weight: 700;
+}
