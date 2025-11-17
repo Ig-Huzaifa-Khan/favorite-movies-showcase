@@ -6,7 +6,9 @@ A well-structured, single-page web application built with **React and Vite**. Th
 
 - **GitHub Repository:** https://github.com/Ig-Huzaifa-Khan/favorite-movies-showcase.git
 
-- **Live Website:** 
+- **Live Website:** https://favorite-movies-showcase-kappa.vercel.app/
+
+
 ## Project Features
 
 * **Technology Stack:** Built using React.js and Vite.
