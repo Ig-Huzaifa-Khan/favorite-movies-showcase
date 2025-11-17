@@ -4,7 +4,7 @@ A well-structured, single-page web application built with **React and Vite**. Th
 
 ## Links
 
-- **GitHub Repository:** 
+- **GitHub Repository:** https://github.com/Ig-Huzaifa-Khan/favorite-movies-showcase.git
 
 - **Live Website:** 
 ## Project Features
